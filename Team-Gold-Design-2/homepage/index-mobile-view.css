@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+/*this section contains CSS codes for the desktop design */
+@media only screen and (min-width: 1021px) {
+    body {
+        background: url(./img/face_2.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size:  cover;
+        width: 100%;
+        overflow-x: hidden;
+        text-decoration: none;
+        list-style: none;
+    }
+/*contains css codes for the header part of the webpage*/
+    .sub-header1 {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+    }
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-left: 4.8rem;
+    }
+    
+    .logo-text {
+        color: white;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .availability {
+        position: relative;
+        bottom: 9rem;
+        left: 59%;
+        right: 10rem;
+    }
+
+    .telephone {
+        display: flex;
+        color: white;
+        margin-right: 1.2rem;
+    }
+
+    .tele-phone {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-left: 4px;
+    }
+
+    .btn {
+        padding: 10px 26px;
+        background-color: #cbce3f;
+        border: 1.5px solid #cbce3f;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        margin-top: 3.5rem;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        margin-left: 3rem;
+    }
+
+    li {
+        margin-left: 3rem;
+    }
+
+    li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+/*css codes for welcome note design*/
+    .welcome-note {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        margin-top: 13rem;
+        font-size: 1.5rem;
+        margin-left: 50%;
+        background-color: #2c3e5080;
+        border-radius: 8px;
+        padding-bottom: 1rem;
+    }
+
+    .sub-para {
+        font-size: 1.2rem;
+        margin-top: -19px;
+        text-align: center;
+    }
+
+    .second-para {
+        display: none;
+    }
+/*css codes for the horizontal view, which styles the arrow-fonts and circle-fonts */
+    .slide {
+        font-size: 3rem;
+        color: whitesmoke;
+        display: flex;
+        margin-top: 5rem;
+    }
+
+    .left-slide {
+        margin-right: auto;
+    }
+
+    .left-slide:active {
+        color: #cbce3f;
+    }
+    
+    .right-slide:active {
+        color: #cbce3f;
+    }
+
+    .right-slide {
+        margin-right: 1.2rem;
+    }
+
+    .position {
+        margin-top: 8rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .second-posit {
+        margin: 0px 10px;
+        color: #cbce3f;
+    }
+/*css codes for the footer part of the webpage*/
+    .footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .arr-dept {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 13px 10px;
+        border-radius: 10px;
+    }
+    
+    .arr-dept1 {
+        font-size: 1.5rem;
+    }
+    
+    .arr-dept2 {
+        font-size: 1.2rem;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .Guests {
+        background: white;
+        margin: 0rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 13px 10px;
+        border-radius: 10px;
+    }
+
+    .guests {
+        font-size: 1.5rem;
+    }
+
+    .sub-guests-list {
+        font-size: 1.3rem;
+    }
+
+    .arr-dept p {
+        display: none;
+    } 
+    
+    .guests-list{
+        display: none;
+    }
+
+    .check-rates {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .check-rates-btn {
+        padding: 10px 20px;
+        background-color: #cbce3f;
+        border: 1.5px solid #cbce3f;
+        border-radius: 6px;
+        font-size: 25px;
+    }
+}
+
+/*css codes adjust the css codes to acommodate screen resolution above the below min-width*/
+@media only screen and (min-width: 1441px) {
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .sub-header1 {
+        margin-top: 2rem;
+    }
+
+    nav {
+        font-size: 1.5rem;
+    }
+
+    .availability {
+       bottom: 10rem;
+    }
+
+    .tele-phone {
+        font-size: 1.7rem;
+        margin-top: 10px;
+        margin-left: 4px;
+    }
+
+    .btn {
+        padding: 15px 29px;
+        background-color: #cbce3f;
+        border: 1.5px solid #cbce3f;
+        border-radius: 6px;
+        font-size: 25px;
+    }
+}
+
+/*css codes adjust the css codes to acommodate screen resolution above the below min-width*/
+@media only screen and (min-width: 2560px) {
+    .logo-text {
+        margin-left: 6rem;
+    }
+}
+
+/*css codes adjust the css codes to acommodate screen resolution above the below min-width*/
+@media only screen and (min-width: 1650px) {
+
+    body {
+        font-size: 2rem;
+    }
+
+    .sub-header1 {
+        margin-top: 2rem;
+    }
+
+    .logo {
+        margin-left: 8%;
+    }
+    
+
+    nav {
+        font-size: 2rem;
+        margin-left: 10%;
+        margin-top: 3rem;
+    }
+
+    .availability {
+        position: relative;
+        bottom: 15rem;
+        left: 59%;
+        right: 10rem;
+    }
+
+    .tele-phone {
+        font-size: 1.7rem;
+        margin-top: 10px;
+        margin-left: 4px;
+    }
+
+    .btn {
+        padding: 15px 29px;
+        background-color: #cbce3f;
+        border: 1.5px solid #cbce3f;
+        border-radius: 6px;
+        font-size: 25px;
+    }
+
+    .position {
+        font-size: 2.5rem;
+    }
+
+    .second-posit {
+        margin: 0px 20px;
+    }
+    
+    .arr-dept {
+        padding: 19px 16px;
+        border-radius: 10px;
+    }
+
+    .arr-dept1 {
+        font-size: 2rem;
+    }
+    
+    .arr-dept2 {
+        font-size: 1.6rem;
+    }
+
+    .Guest{
+
+        padding: 19px 16px;
+        border-radius: 10px;
+    }
+
+    .guests {
+        font-size: 2rem;
+    }
+
+    .sub-guests-list {
+        font-size: 1.6rem;
+    }
+
+    .check-rates-btn {
+        font-size: 30px;
+        padding: 15px 31px;
+    }
+
+
+}
+/*this section contains CSS codes for the mobil view design */
+@media only screen and (max-width: 1020px) {
+/*this section contains codes for the header part of the webpage*/    
+    *{
+    padding: o;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.sub-header1 {
+    display: flex;
+    background: #0082e6;
+    background-color: #cbce3f;
+}
+
+[alt="hotel-icon"] {
+    margin-left: 8px;
+    width: 50px;
+}
+
+.vertical-line {
+    border-left: 1px solid rgb(251, 252, 251);
+    width: px;
+    margin-right: 9px;
+    margin-left: 3px;
+    height: 35px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 9.5px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.checkbtn {
+    font-size: 37px;
+    line-height: 80px;
+    cursor: pointer;
+    display: block;
+    margin-right: 1.5rem;
+    color: white;
+}
+
+#check {
+    display: none;
+}
+
+ul {
+    position: fixed;
+    padding-right: 40px;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: white;
+}
+
+a:hover, a.active {
+    background: transparent;
+    color: #cbce3f;
+}
+
+#check:checked ~ ul {
+    left: 0;
+}
+
+/*css codes for welcome note design*/
+.welcome-note {
+    background: url(./img/face_2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:  cover;
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 1.2rem;
+    color: rgb(252, 248, 217);
+}
+
+/*css codes to disable  the horizontal view, which styles the arrow-fonts and circle-fonts */
+
+.availability, .slide {
+    display: none;
+}
+
+.position {
+    display: flex;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    color: #cbce3f;
+}
+
+.first-posit {
+    color: white;
+    margin-right: 1rem;
+}
+
+
+.third-posit {
+    color: white;
+    margin-left: 1rem;
+}
+
+/*css codes for the footer part of the webpage*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.arr-dept1 {
+    color: #cbce3f;
+    font-weight: bolder;
+    padding-bottom: 0.8rem;
+    padding-top: 1rem;
+}
+
+.arr-dept1:active {
+    background-color: #cbce3f03;
+}
+
+
+.arr-dept {
+    border: 1px solid #cbce3f;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 8%;
+    padding-bottom: 8%;
+    margin: 0 10%;
+    border-radius: 10px;
+}
+
+
+.arr-dept:hover {
+    border: 1.5px solid #cbce3f;
+    background-color: rgb(238, 233, 228);
+}
+
+.guests {
+    color: #cbce3f;
+    font-weight: bolder;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.Guests:hover {
+    border: 1.5px solid #cbce3f;
+    background-color: rgb(238, 233, 228);
+}
+
+.Guests {
+    border: 1px solid #cbce3f;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+    padding-bottom: 8%;
+    margin: 0 10%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.check-rates {
+    margin-top: 2.5rem;
+}
+
+.check-rates-btn {
+    padding: 10px 26px;
+    background-color: transparent;
+    border: 1.5px solid #cbce3f;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.check-rates-btn:hover {
+    border: 2px solid #cbce3f;
+}
+.check-rates-btn:active {
+    background-color: #cbce3f;
+}
+
+/*css code to adjust the webpage for screen above the below min-width*/
+@media only screen and (min-width: 320px) {
+    .second-para {
+        margin-bottom: 40px;
+    }
+}
+
+}
+
+
