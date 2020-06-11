@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:
+  padding: 0;
+}
+
+header {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.2;
+
+}
+
+.hero {
+  background-image: url(../../img/melissa-walker-horn-jsEftnpVh1U-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+}
+
+/* .hero-bg {
+  position: absolute;
+  width: 350px;
+  margin-left: -300px;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 0;
+} */
+
+.hero-message {
+  background-color: #fff;
+  max-width: 480px;
+  padding: 50px 50px 50px 80px;
+  margin-left: -80px;
+}
+
+.hero-message-container {
+
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.hero-message h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.hero-message p {
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.logo img {
+  width: 38px;
+  height: auto;
+}
+
+.intro-section {
+  padding: 70px 0;
+}
+
+.room-half {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.room-section {
+  min-height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  flex-direction: row;
+}
+
+.room-reverse {
+  flex-direction: row-reverse;
+}
+
+.room-section-description {
+  background: linear-gradient(0deg, rgba(2, 23, 100, 0.88), rgba(2, 23, 100, 0.88));
+  color: #fff;
+  padding: 100px 70px 100px 50px;
+}
+
+.room-section-description h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.room-section-description button {
+  background-color: #fff;
+  border-radius: 0;
+  outline: 0;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.room-section-description ul {
+  list-style: none;
+  padding: 0;
+}
+
+.room-section-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width : 950px) {
+  .intro-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .hero-message {
+    margin-left: -30px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .room-half {
+    width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-message {
+    margin-left: 0;
+    background-color: rgba(255, 255, 255, 0.92);
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .hero-message {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .intro-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .room-section-description {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .hero {
+    align-items: flex-end;
+    height: 600px;
+  }
+
+  .room-section {
+    margin-bottom: 30px;
+  }
+}

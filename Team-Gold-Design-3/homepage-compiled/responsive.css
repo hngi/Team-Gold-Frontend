@@ -1,0 +1,124 @@
+/* Small tablet to big tablet: from 991px to 1129px */
+@media only screen and (max-width: 1129px) {
+    .nav_link {
+        margin: 0 20px;
+    }
+    .landing_content {
+        padding: 3% 10% 3% 2%; 
+    }
+    .landing_content h1 {
+        font-size: 31px;
+    }
+    .landing_content p {
+        color: #000000;
+        font-size: 14px;
+    }
+}
+
+/* Small phones to small tablets: from 740px to 990px */
+@media only screen and (max-width: 990px) {
+    #ham-bar {
+        display: none;
+    }
+
+    .header_btn {
+        display: none;
+    }
+
+
+
+}
+
+/* Small phones: from 636px to 740px */
+@media only screen and (max-width: 739px) {
+    #ham-bar {
+        display: inline;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .header_logo {
+        flex: 0 1 80%;
+    }
+
+    .change{
+        display: block;
+    }
+    .header_nav {
+        margin-bottom: 15px;
+    }
+    .nav_link {
+        margin-bottom: 15px;
+    }
+    
+    .landing_content {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-35%, -50%);
+        width: inherit;
+        height: auto;
+        padding: 5% 10% 5% 2%;
+    }
+    .footer_top,
+    .footer_bottom {
+        flex-flow: column wrap; /* chnage from default direction row to column */
+        align-items: flex-start;
+    }
+    .footer_top_right {
+        width: 100%; /* take the full body */
+    }
+    .footer_top_logo,
+    .footer_copyright {
+        margin-bottom: 20px;
+    }
+    
+}
+
+/* Small phones: from 446px to 635px */
+@media only screen and (max-width: 635px) {
+    .footer_top_right {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 20px;
+    }
+    .footer_btn button {
+        width: 100%;
+        width: 100px; /* give the buttons equal width of 100px */
+        border-radius: 5px;
+        padding: 6px 20px;
+        margin: 0 10px 0 0; /* set all margin to zero except margin-right */
+        float: left;
+    }
+    
+    .landing_content h1 {
+        font-size: 1.5rem;
+    }
+    .landing_content {
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    position: relative;
+    /* height: 60%; */
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5% 2% 5% 2%;
+    }
+
+    .header_logo a {
+        margin-left: 0;
+    }
+    .header_logo a span{
+        font-size: 12px;
+    }
+}
+
+/* Small phones: from 0 to 445px */
+@media only screen and (max-width: 445px) {
+    .footer_top_right_list {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+    }
+}
+
