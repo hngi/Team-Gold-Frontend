@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+  background-color: #FBFBFB;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.description {
+  background: white;
+  border: 1px solid #021764;
+  position: relative;
+  padding: 20px 20px 0 20px;
+}
+
+#autoWidth {
+  margin-bottom: 20px;
+}
+
+.item-a {
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.description::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #021764;
+  left: 12px;
+  top: 10px;
+  z-index: -1;
+}
+
+.description h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.img-box {
+  background-image: url(img/resturant.png);
+}
+
+.img-box1 {
+  background-image: url(img/recreation.png);
+}
+
+.img-box2 {
+  background-image: url(img/relaxation1.png);
+}
+
+.img-box, .img-box1, .img-box2 {
+  width: 350px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-container {
+  width: 100%;
+  margin: 0 40px 0 30px;
+}
+
+.btn-visit {
+  margin-top: 50px;
+  display: block;
+  padding: 10px 50px;
+  background-color: #021764;
+  outline: none;
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btn-visit:hover {
+  background-color: #1835a0;
+}
+
+.text-container h1 {
+  margin-bottom: 15px;
+}
+
+.text-container h2 {
+  margin-bottom: 35px;
+  color: #021764;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+
+@media screen and (max-width:768px) {
+  .container {
+    display: block;
+    background-color: white;
+    margin-top: 0;
+  }
+
+  .text-container {
+    width: 85%;
+    margin: 0 40px 0 30px;
+    padding-top: 30px;
+
+  }
+
+  .text-container h1 {
+    margin-bottom: 10px;
+  }
+
+  .text-container h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #021764;
+
+  }
+
+  .btn-visit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+
+/* About section */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0 100px 30px 60px;
+}
+
+
+.about-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.about-img::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  right: 14px;
+  top: 12px;
+  background-color: #021764;
+  z-index: -1;
+}
+
+.about-img img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+@media screen and (max-width:768px) {
+  .section {
+    display: block;
+    margin: 40px;
+  }
+
+  .section2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .text-margin {
+    width: 100%;
+    margin: 0 60px 0 0;
+  }
+}
+
+/* Testemonial */
+.section2 {
+  margin: auto;
+  width: 85%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.individual-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: white;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  padding: 30px 20px 30px 20px;
+  margin-top: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section2 h1 {
+  margin-bottom: 20px;
+}
+
+.individual-info p {
+  line-height: 1.5rem;
+}
+
+.individual-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-pics {
+  width: 48px;
+  height: 48px;
+  background-image: url(img/testimonies.png);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile h4 {
+  font-size: 10px;
+}
+
+.profile-text {
+  margin-left: 10px;
+}
+.profile p {
+  font-size: 8px;
+}
+
+/* swiper styling */
+.swiper-container {
+  width: 100%;
+  /* padding-top: 50px; */
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  background-color: white;
+}
