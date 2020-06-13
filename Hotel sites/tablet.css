@@ -1,0 +1,128 @@
+@media (max-width: 768px) {
+    .show img.center {
+        width: 100%;
+    }
+    .sig {
+        width: 100%;
+    }
+    .sig h1 {
+        font-size: 30px;
+        padding: 0.5rem;
+    }
+    .sig p {
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+    #home-articles {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+    }
+    #home-articles .articles-container .card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h1.card {
+        text-align: center;
+        padding-left: 1rem;
+        font-size: 22px;
+        margin-left: 0rem;
+        padding-right: 0%;
+        width: 100%;
+    }
+    #home-articles div div.card-text h2 {
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        font-size: 20px;
+    }
+    #home-articles div div.card-text p {
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    #home-articles div div.card-text a {
+        text-align: center;
+        width: 30%;
+        font-size: 18px;
+        padding: 0;
+        margin-left: 45.5%;
+    }
+    #home-articles div div.card-text h2 {
+        padding-top: 1rem;
+    }
+    #home-articles div div.card3-text {
+        height: 100%;
+    }
+    #home-articles div div.card-text {
+        height: 100%;
+    }
+    .card2 {
+        padding: 2rem 0;
+    }
+    .card2 img {
+        width: 100%;
+    }
+    #home-articles div div.card2-text h2 {
+        padding: 1rem;
+    }
+    #home-articles div div.card2-text p {
+        font-size: 18px;
+    }
+    #home-articles div div.card2-text a {
+        margin-left: 45%;
+    }
+    #home-articles .articles-container .card3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #home-articles div div.card3-text h2 {
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        font-size: 20px;
+    }
+    #home-articles div div.card3-text p {
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        padding: 1rem;
+    }
+    #home-articles div div.card3-text a {
+        text-align: center;
+        width: 30%;
+        font-size: 12px;
+        padding: 0;
+        margin-left: 45%;
+    }
+    #home-articles .articles-container .card22 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #home-articles .articles-container .card22 {
+        background: #fff;
+        padding-left: 10%;
+    }
+    h1.card22 {
+        text-align: center;
+        padding-left: 1rem;
+        font-size: 22px;
+        margin-left: 0rem;
+        margin-right: 0;
+        width: 100%;
+    }
+    .card22 {
+        padding: 1rem 0;
+    }
+    #home-articles div div.card22-text p {
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        padding: 1rem 0;
+    }
+    #home-articles div div.card22-text a {
+        text-align: center;
+        width: 30%;
+        font-size: 12px;
+        padding: 0;
+        margin-left: 45%;
+    }
+}
