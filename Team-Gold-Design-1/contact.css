@@ -1,0 +1,277 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-size: 1rem; */
+  font-family: "Roboto", sans-serif;
+}
+
+body, .homeContainer{
+    overflow: auto;
+    max-width: 100vw;
+
+}
+.homeContainer{
+    background-image: url('images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.navMenu{
+display: none;
+}
+.homeContainer .navContainer{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 1fr;
+    border: 1px so  lid black;
+}
+.homeContainer .navContainer .logo{
+    background-image: url('images/logo.jpeg');
+    background-size: 100%;
+    min-width: 100%;
+    min-height: 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.1em;
+}
+.homeContainer .navContainer .navBar{
+    background-color:rgb(16, 16, 112);
+}
+.homeContainer .navContainer .navBar ul{
+    margin-top: 1.5em;
+}
+.homeContainer .navContainer .navBar ul li{
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
+    margin-left: 2%;
+}
+.homeContainer .navContainer .navBar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.homeContainer .navContainer .navBar ul li a:hover{
+    border-bottom: 1px solid white;
+    color: yellow;
+}
+.homeContainer .navContainer .signup{
+    background-color:white;
+
+}
+.homeContainer .navContainer .signup #signup{
+    margin: 1em auto;
+    background-color: white;
+    text-decoration: none;
+}
+.homeContainer .navContainer .signup #signup{
+    text-align: center;
+    margin-top: 20px;
+}
+.homeContainer .navContainer .login h4 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1.5em;
+
+}
+.homeContainer .navContainer .login{
+    background-color:rgb(16, 16, 112);
+}
+.homeContainer .navContainer .login h4 a:hover{
+    color: yellow;
+    border-bottom: 2px solid white;
+}
+.homeContainer .navContainer .signup #signup a{
+    text-decoration: none;
+}
+.homeContainer .navContainer .signup a:hover{
+    color: rgb(233, 136, 10);
+}
+
+/* UTILITIES */
+.heading {
+  text-transform: uppercase;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.small-heading {
+  font-size: 1.5rem;
+}
+
+.light-color {
+  color: #fff;
+}
+
+.blue-color {
+  color: #1d578d;
+}
+
+ul {
+  list-style: none;
+}
+
+/* MAIN STYLING */
+.contact {
+  min-height: 100vh;
+  background: url("./img/IMG-20200608-WA0051.jpg") no-repeat center center/cover;
+}
+
+.contact-container {
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+}
+
+.contact-inner-container {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.88) 99.97%,
+    rgba(255, 255, 255, 0.567708) 99.98%,
+    #ffffff 99.99%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding: 3rem 1.5rem;
+}
+
+.contact-inner-container h3 {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-top: 1.3rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.form-group .form-group__first-name:after {
+  content: "*";
+}
+.form-group .form-group__last-name:after {
+  content: "*";
+}
+.form-group .form-group__email:after {
+  content: "*";
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border: 0;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 0;
+  height: 100px;
+}
+
+form .btn-form-submit {
+  text-transform: uppercase;
+  padding: 0.4rem 3rem;
+  margin-top: 2rem;
+  background-color: #1d578d;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-inner-container .how-to-contact {
+  padding-top: 4rem;
+}
+
+.contact-address li + li {
+  margin-top: 1rem;
+}
+
+.contact-address li p {
+  display: flex;
+  align-items: center;
+}
+
+.contact-address li p .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  width: 30px;
+
+  height: 30px;
+  background-color: #1d578d;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.contact-address li p span:last-child {
+  margin-left: 1rem;
+}
+
+.footer{
+    display: grid;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(27, 27, 25, 0.8);
+    color: #fff;
+    font-size: 0.9em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+@media screen and (min-width: 900px) {
+  .flex {
+    display: flex;
+  }
+
+  .contact-inner-container {
+    padding-top: 5rem;
+  }
+
+  .contact-inner-container h3 {
+    margin-bottom: 4rem;
+  }
+
+  .contact-inner-container.flex {
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+
+  .contact-inner-container .how-to-contact {
+    padding-top: 0rem;
+  }
+
+  .left {
+    min-width: 50%;
+    align-self: flex-start;
+  }
+
+  .right {
+    min-width: 50%;
+    align-self: flex-start;
+    padding-left: 3rem;
+  }
+
+  .form-group {
+    margin-top: 0rem;
+  }
+
+  .grid-c-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+  }
+}

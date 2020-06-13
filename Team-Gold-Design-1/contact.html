@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS STYLING -->
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Elixir Hotel | Contact us</title>
+  </head>
+  <body>
+    <div class="homeContainer">
+        <!--nav starts here-->
+         <div class="navContainer">
+            <div class="logo"></div>
+            <div class="navBar">
+                <ul class="hideNav">
+                    <h3 class="navMenu">MENU</h3>
+                    <li ><a href="index.html" class="hideNav navLinks" >HOME</a></li>
+                    <li ><a href="ROOMS-AND-RATINGS/index.html" class="hideNav navLinks" >ACCOMODATION</a></li>
+                    <li ><a href="OUR-FACILITIES/index.html" class="hideNav navLinks">FEATURES</a></li>
+                    <li ><a href="#" class="hideNav navLinks">GALLERY</a></li>
+                    <li ><a href="#" class="hideNav navLinks">NEWS</a></li>
+                    <li ><a href="contact.html" class="hideNav navLinks">CONTACT US</a></li>
+                </ul>
+            </div>
+                    <div class="signup"><a href="#" id="signup"><h4>SIGNUP</h4></a></div>
+                    <div class="login"><h4 id="login"><h4><a href="#">Login</a></h4></div>
+    </div>
+
+    <!-- CONTACT PAGE  -->
+    <main id="contact" class="contact">
+      <div class="contact-container">
+        <h2 class="heading main-heading light-color">CONTACT US</h2>
+
+        <div class="contact-inner-container flex">
+          <!-- DIRECT INQUIRES -->
+          <div class="direct-inquiries left">
+            <h3 class="heading medium-heading blue-color">
+              DIRECT INQUIRIES
+            </h3>
+            <form>
+              <div class="form-inner-container grid-c-2">
+                <div class="form-group">
+                  <label for="first-name" class="form-group__first-name"
+                    >First Name</label
+                  >
+                  <input type="text" name="firstName" id="first-name" />
+                </div>
+                <div class="form-group">
+                  <label for="last-name" class="form-group__last-name"
+                    >Last Name</label
+                  >
+                  <input type="text" name="lastName" id="last-name" />
+                </div>
+                <div class="form-group">
+                  <label for="phone-number" class="form-group__phone-number"
+                    >Phone Number</label
+                  >
+                  <input type="text" name="phoneNumber" id="phone-number" />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-group__email"
+                    >Email Address</label
+                  >
+                  <input type="email" name="email" id="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-group__message">Message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <button disabled="disabled" class="btn btn-form-submit">
+                submit
+              </button>
+            </form>
+          </div>
+
+          <!-- HOW TO CONTACT -->
+          <div class="how-to-contact right">
+            <h3 class="heading meduim-heading blue-color">
+              HOW TO CONTACT US
+            </h3>
+            <ul class="contact-address">
+              <li>
+                <p>
+                  <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                  PHONE <span>(+234)-8107129819</span>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <span class="icon"><i class="far fa-envelope"></i></span>
+                  EMAIL <span>Elixir@gmail.com</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="icon"
+                    ><i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  ADDRESS <span>Ring Road, Oke-onitea, Osogbo, Osun state</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+        <p>&copy; 2020 ELIXIR Hotels</p>
+        <p>Address: No 16 off Lekki Express, Transitions building lagos state Nigeria</p>
+        <p>Telephone: 080900000599</p>
+    </div>
+</div>
+  </body>
+</html>

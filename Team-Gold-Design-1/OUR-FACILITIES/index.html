@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OUR FACILITIES</title>
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <!-- Note 1.) link for hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+ <!-- Note 2.)add an id to the navigation bar to link to the javascript function -->
+      <div class="navigationBar" id="navId">
+       <img class="logo" src="./img/logo.jpeg" alt="logo">
+        <ul>
+          <a href="../index.html"><li>HOME</li></a>
+          <a href="../ROOMS-AND-RATINGS/index.html"><li>ACCOMODATIONS</li></a>
+          <a href="index.html"><li>FEATURES</li></a>
+          <a href=""><li>GALLERY</li></a>
+          <a href=""><li>NEWS</li></a>
+          <!-- Note 3.) javaScript link to the code(at bottom of page) to give the hamburger menu functionality -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <li><i class="fa fa-bars"></i></li>
+          </a>
+        </ul>
+      </div>
+      <div class="ourFacilities">
+        <h1 class="purpleButton">OUR FACILITIES</h1>
+
+      </div>
+        <div class="room">
+          <img class="roomImg" src="./img/room.png" alt="room">
+          <div class="roomContent">
+            <h2>Elixir Rooms</h2>
+            <p>We provide the most comfortable matress to make you feel comfortable when sleeping</p>
+            <button>Show more</button>
+          </div>
+        </div>
+      <div class="bar">
+        <img class="barImg" src="./img/bar.jpg" alt="bar">
+          <div class="barContent">
+            <h2>Elixir Bar</h2>
+        <p> Elixir bar provides all drinks you could ever ask for and it is surely one of the best ever</p>
+        <button>Show more</button>
+          </div>
+      </div>
+      <div class="cuisine">
+        <img class="cuisineImg" src="./img/cuisine.jpg" alt="cuisine">
+        <div class="cuisineContent">
+          <h2>Elixir Cuisine</h2>
+          <p> At Elixir cuisine , we have most of the best chef around and we promised to repay you if you didnt love it </p>
+          <button>Show more</button>
+        </div>
+
+      </div>
+      <div class="laundry">
+        <img class="laundryImg" src="./img/laundry.jpg" alt="laundry">
+        <div class="cuisineContent">
+          <h2>Elixir Laundry</h2>
+        <p>At elixir laundry we make sure we provide the most cleanest services. we always want our customers satisfaction.</p>
+        <button>Show more</button>
+        </div>
+
+      </div>
+        <footer> <p class="footer"> © 2020 Team Gold Frontend Team </p></footer>
+
+
+    <!-- Note 4.) javaScript code to give the hamburger menu functionality.
+         Do not place a space infront of the response ooo because it joins to navigationBar class -->
+        <script>
+          function myFunction() {
+            var x = document.getElementById("navId");
+            if (x.className === "navigationBar") {
+              x.className += "responsive";
+            } else {
+              x.className = "navigationBar";
+            }
+          }
+        </script>
+  </body>
+</html>

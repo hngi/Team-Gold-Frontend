@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <script>
+        $(document).ready(function(){
+        $("navMenu").click(function(){
+            $(".navMenu").toggleClass("hideNav");
+        });
+    });
+    </script>
+</head>
+<body>
+
+    <div class="homeContainer">
+        <!--nav starts here-->
+         <div class="navContainer">
+            <div class="logo"></div>
+            <div class="navBar">
+                <ul class="hideNav">
+                    <h3 class="navMenu">MENU</h3>
+                    <li ><a href="index.html" class="hideNav navLinks" >HOME</a></li>
+                    <li ><a href="ROOMS-AND-RATINGS/index.html" class="hideNav navLinks" >ACCOMODATION</a></li>
+                    <li ><a href="OUR-FACILITIES/index.html" class="hideNav navLinks">FEATURES</a></li>
+                    <li ><a href="#" class="hideNav navLinks">GALLERY</a></li>
+                    <li ><a href="#" class="hideNav navLinks">NEWS</a></li>
+                    <li ><a href="contact.html" class="hideNav navLinks">CONTACT US</a></li>
+                </ul>
+            </div>
+                    <div class="signup"><a href="#" id="signup"><h4>SIGNUP</h4></a></div>
+                    <div class="login"><h4 id="login"><h4><a href="#">Login</a></h4></div>
+    </div>
+    <!--nav ends here-->
+
+        <div class="bestBooking"><!--begining of main content-->
+            <!--Begining of Booking contents-->
+            <div class="bestBkContent" style="width: 100%; position: relative;">
+                <img src="images/logo2.jpeg" alt="secondary logo" class="bkImage">
+                <h1 id="bestBkContent" style="display: inline-block">BEST BOOKING</h1>
+                <ul style="position: absolute; top: 0; left: 40%;" class="aboutAndHotel">
+                    <li class="aboutusAndHotel"><a href="#">ABOUT OUR AREA</a></li>
+                    <li class="aboutusAndHotel"><a href="#">OUR HOTEL</a></li>
+                </ul>
+                <h2 class="bkRoom"><a href="#">BOOK A ROOM</a></h2>
+            </div>
+        </div>
+        <!--booking contents end here-->
+
+        <!--logo appears again with the brand as subscript-->
+        <div class="elixirHotel"><img src="images/logo.jpeg" alt=""><span>ELIXIR HOTEL</span></div>
+        <div class="location" style="width: 30%; margin: 5% auto; background-color: purple; opacity: 0.8; height: 8em">
+            <h2 style="color: white; text-align: center; padding-top:1em">LOCATION</h2>
+            <p style="color: white; text-align: center;">Our Location makes it suitable for your Vacation!</p>
+        </div>
+
+    <!--footer starts here-->
+        <div class="footer">
+            <p>&copy; 2020 ELIXIR Hotels</p>
+            <p>Address: No 16 off Lekki Express, Transitions building lagos state Nigeria</p>
+            <p>Telephone: 080900000599</p>
+        </div>
+    </div>
+    <!--end of footer-->
+</body>
+</html>

@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Verdana,sans-serif;
+}
+body, .homeContainer{
+    overflow: auto;
+    max-width: 100vw;
+}
+.homeContainer{
+    background-image: url('images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.navMenu{
+display: none;
+}
+.homeContainer .navContainer{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 1fr;
+    border: 1px solid black;
+}
+.homeContainer .navContainer .logo{
+    background-image: url('images/logo.jpeg');
+    background-size: 100%;
+    min-width: 100%;
+    min-height: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.1em;
+}
+.homeContainer .navContainer .navBar{
+    background-color:rgb(16, 16, 112);
+}
+.homeContainer .navContainer .navBar ul{
+    margin-top: 0.75em;
+}
+.homeContainer .navContainer .navBar ul li{
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
+    margin-left: 2%;
+}
+.homeContainer .navContainer .navBar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.homeContainer .navContainer .navBar ul li a:hover{
+    border-bottom: 1px solid white;
+    color: yellow;
+}
+.homeContainer .navContainer .signup{
+    background-color:white;
+}
+.homeContainer .navContainer .signup #signup{
+    margin: 1em auto;
+    background-color: white;
+    text-decoration: none;
+}
+.homeContainer .navContainer .signup #signup{
+    text-align: center;
+}
+.homeContainer .navContainer .login h4 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1.5em;
+}
+.homeContainer .navContainer .login{
+    background-color:rgb(16, 16, 112);
+}
+.homeContainer .navContainer .login h4 a:hover{
+    color: yellow;
+    border-bottom: 2px solid white;
+}
+.homeContainer .navContainer .signup #signup a{
+    text-decoration: none;
+}
+.homeContainer .navContainer .signup a:hover{
+    color: rgb(233, 136, 10);
+}
+.homeContainer .bestBooking .bestBkContent ul li{
+    display: inline-block;
+    margin-right: 0.75em;
+    font-size: 0.8em;
+}
+.homeContainer .bestBooking{
+    background-color: purple; opacity: 0.8; height: 8em; margin: 0 auto;
+}
+.homeContainer .bestBooking .bestBkContent ul li a{
+    text-decoration: white;
+    color: white;
+}
+.homeContainer .bestBooking .bestBkContent ul li a:hover{
+    border-bottom: 2px solid white;
+    color: yellow;
+}
+.bestBkContent{
+    width: 100%; 
+    position: relative;
+    display: inline-block;
+    margin-top: 1.5%;
+    margin-left: 7%;
+}
+.homeContainer .bestBooking .bestBkContent #bestBkContent{
+    position:absolute;
+    left:10px;
+    color: white;
+    margin-bottom: 0.75em;
+}
+.homeContainer .bestBooking .bestBkContent img{
+    height: 4em;
+    width: 3.3em;
+    border-radius: 2px;
+    margin-left: -4em;
+}
+.homeContainer .bestBooking .bestBkContent h2 a{
+    text-decoration: none;
+    color: white;
+}
+.homeContainer .bestBooking .bestBkContent h2{
+    position: absolute; 
+    top: -10%; left: 65%; 
+    color: white; 
+    border: 2px solid white; 
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+}
+.homeContainer .bestBooking .bestBkContent h2 a:hover{
+    color: black;
+}
+.homeContainer .bestBooking .bestBkContent h2:hover{
+    background-color: yellow;
+}
+.homeContainer .location h2{
+    margin-top: 1.9em;
+}
+.aboutusAndHotel{
+    color: white;
+}
+.footer{
+    display: grid;
+    text-align: center;
+    background-color: rgba(27, 27, 25, 0.8);
+    color: #fff;
+    font-size: 0.9em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.elixirHotel{
+    margin-top: 2.5em; margin-left: 35em; height: auto; letter-spacing: 0.4em;
+    overflow: auto;
+    
+}
+.elixirHotel img{
+    height: 120%;
+    border-radius: 3px;
+    margin-top: -0.75em;
+    width: 17%;   
+}
+.elixirHotel span{
+    color:white;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 0.6em;
+}
+@media screen and (max-width: 900px) {
+    .homeContainer .navContainer .logo{
+        grid-area: mainLogo;
+        height: 10em;
+        opacity: 0.9;
+        background-size: cover;
+    }
+    .homeContainer .navContainer .navBar{
+    grid-area: navBar;
+}
+.homeContainer .navContainer .signup{
+    grid-area: signUp;
+}
+.homeContainer .navContainer .login{
+    grid-area: login;
+}
+    .homeContainer .navContainer{
+    display: grid;
+    grid-template-areas:
+     'navBar'
+     'mainLogo'
+     'logo'
+     'signUp'
+     'login';
+    border: 1px solid black;
+    }
+    .homeContainer .navContainer .navBar{
+        width: 100vw;
+    }
+    .homeContainer .navContainer .navBar ul li{
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    height: 100%;
+}
+.homeContainer .navContainer .navBar ul {
+    margin-left: -35px;
+}
+.hideNav li a{
+    display: none;
+}
+.homeContainer .bestBooking .bestBkContent #bestBkContent{
+    display: block;
+    font-size: 10px;
+    min-width: 100vw;
+    margin-top: 60px; 
+
+}
+.homeContainer .location{
+    min-width: 100vw;
+}
+.homeContainer .bestBooking .bestBkContent ul{
+    margin-left: -46%;
+}
+.bkRoom{
+    font-size: 10pX;
+    margin-top: 25px;
+}
+.elixirHotel{
+    margin-top: 2.5em; margin-left: 8.4em; height: auto; letter-spacing: 0.4em;
+    
+}
+.aboutusAndHotel a{
+    font-size: 12px;
+}
+.aboutusAndHotel{
+    margin-top: -15px;
+}
+.bkImage{
+    position:absolute;
+    left:75px;
+    top:35px;
+    opacity: 0.4;
+}
+.homeContainer .bestBooking .bestBkContent #bestBkContent{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(249, 253, 4);}
+.navMenu{
+    display: inline-block;
+    color: white;
+    border: 3px solid gold;
+    padding: 5px 5px;
+    margin-left: 10px;
+}
+.navMenu:hover{
+cursor: pointer;
+background-color: rgb(29, 17, 17);
+}
+.homeContainer .navContainer .login h4{
+    text-align: center;
+    margin-left: -25px;
+}
+.elixirHotel img{
+    display: none;
+}
+.location, footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*
+.homeContainer .navContainer .signup #signup{
+    font-size: 1px;
+}
+.homeContainer .bestBooking .bestBkContent ul li{
+    font-size: 20px;
+}
+#bestBkContent{
+    grid-area: bestBkContent;
+}
+.aboutAndHotel{
+    grid-area: aboutAndHotel;
+}
+.homeContainer .bestBooking .bestBkContent{
+    display: grid;
+    grid-template-areas: 
+    'bkRoom'
+    'bestBkContent'
+    'aboutAndHotel'
+    ;
+}*/
+}   

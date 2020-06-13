@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROOMS AND RATINGS</title>
+    <link rel="stylesheet" href="styles.css">
+
+ <!-- Note 1.) link for hamburger menu -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- Note 2.)add an id to the navigation bar to link to the javascript function -->
+        <div class="navigationBar" id="navId">
+            <img class="logo" src="./img/logo.jpeg" alt="logo">
+            <p class="book">Book now</p>
+            <ul>
+                <a href="../index.html"><li>HOME</li></a>
+                <a href="index.html"><li>ACCOMODATIONS</li></a>
+                <a href="../ROOMS-AND-RATINGS/index.html"><li>FEATURES</li></a>
+                <a href=""><li>GALLERY</li></a>
+                <a href=""><li>NEWS</li></a>
+       <!--Note 3.) javaScript link to the code(at bottom of page) to give the hamburger menu functionality -->
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <li><i class="fa fa-bars"></i></li>
+                 </a>
+            </ul>
+
+        </div>
+        <div class="swanPicture">
+            <img class="swanImg" src="./img/swan.jpg" alt="">
+        </div>
+        <div class="boutiqueAccomodations">
+            <h1>BOUTIQUE ACCOMODATIONS AT ELIXIR HOTEL</h1>
+        </div>
+        <div class="finalDiv">
+            <div class="firstHalf">
+                <h2 class="blueH2">Every Room Is Designed Well To Suit Your Taste</h2>
+                <br>
+                <p>We care about our customers sleep. After much hardwork,
+                    we made sure everything has been perferctly put in place.</p>
+            </div>
+            <div class="secondHalf">
+                <h2>What Is Availabe In The Room?</h2>
+                <br>
+                <p> we have provided many amenities to make sure you are satisfied</p>
+            </div>
+        </div>
+
+    <!--Note 4.) javaScript code to give the hamburger menu functionality.
+      Do not place a space infront of the response ooo because it joins to navigationBar class -->
+        <script>
+          function myFunction() {
+            var x = document.getElementById("navId");
+            if (x.className === "navigationBar") {
+              x.className += "responsive";
+            } else {
+              x.className = "navigationBar";
+            }
+          }
+        </script>
+
+</body>
+</html>
