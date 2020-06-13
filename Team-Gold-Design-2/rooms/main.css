@@ -261,8 +261,8 @@ header .brand-identity {
     float: left;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .copyright-bar {
@@ -341,6 +341,11 @@ header .brand-identity {
   .suite-available a {
     font-size: 14px;
   }
+
+  .menu-list li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 }
 
 /*MEDIA QUERY FOR SCREENS A LITTLE LARGER THAN MOBILE */
@@ -425,6 +430,11 @@ header .brand-identity {
   .overlay-text button {
     font-size: 14px;
   }
+
+  .menu-list li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 }
 
 @media only screen and (min-width: 1024px) {
