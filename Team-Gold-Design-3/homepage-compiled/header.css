@@ -41,6 +41,10 @@ li {
     align-items: center;
 }
 
+.nav_link {
+    padding: 0 20px;
+}
+
 .header_nav {
     display: flex;
     justify-content: space-between;
