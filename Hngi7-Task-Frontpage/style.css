@@ -1,0 +1,124 @@
+body {
+  background-image: url(./face_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+* {
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+}
+a {
+  color: #ffffff;
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 107px;
+  height: 91px;
+  margin: 5px 0px 15px 57px;
+}
+.logo-text {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.contact {
+  display: flex;
+}
+.num-tel{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.check {
+  display: inline-block;
+  background-color: #cbce3f;
+  border: #cbce3f solid 2px;
+  border-radius: 8px;
+  padding: 7px 7px 7px 16px;
+  margin-right: 70px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px auto 90px;
+  font-weight: bolder;
+}
+.menu {
+  text-align: right;
+  margin-bottom: 40px;
+  justify-self: right;
+}
+.menu p {
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 1.8em;
+  border-radius: 7px 0px 0px 7px;
+  padding: 25px 10em ;
+ 
+ 
+}
+/* */
+.arrows{
+  display: flex;
+  justify-content: space-between;
+  font-size: 5rem;
+  color: whitesmoke;
+  margin-bottom: 70px;
+}
+
+.footer {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.circle-container {
+  margin: 0 auto 50px;
+}
+.footer-links {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.arr-dept,
+.Guests {
+  color: black;
+  background-color: #ffffff;
+  border: #ffffff border 2px;
+  border-radius: 6px;
+  margin: 0 2.5px;
+  padding: 7px 28px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.2em;
+  text-align: center;
+}
+.arr-dept2,
+.guests-list {
+  font-size: 12px;
+}
+.check-rates {
+  background: #cbce3f;
+  border: #cbce3f solid 2px;
+  border-radius: 6px;
+  margin: 0 2.5px;
+  padding: 14px 28px;
+  font-weight: bold;
+  align-self: flex-end;
+}
